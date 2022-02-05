@@ -1,0 +1,115 @@
+body {
+    background: #228D87;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.header {
+    width: 60%;
+    height: auto;
+    text-align:center
+}
+.circle-icon {
+    border: 2px solid #333;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+.date-calculator {
+    border: 10px solid rgba(255, 255, 255, 0.08);
+    border-radius: 40px;
+    background: #5FAFAA;
+}
+.title {
+    margin: 20px 0 20px 0;
+    font-family: sans-serif;
+}
+.text {
+    font-size: 20px;
+}
+.date-table-condensed {
+    width: 150px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.day-table-condensed {
+    width: 80px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+label {
+    font-weight: normal;
+}
+input {
+    background: rgba(255, 255, 255, 0.17)!important;
+    border: none!important;
+    padding: 0 16px!important;
+    height: 44px!important;
+    font-size: 20px;
+}
+.plus {
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0px;
+}
+.results-container {
+    background: rgba(255, 255, 255, 0.02);
+    border: 4px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+.footer-left {
+    left: 0;
+}
+.footer-right {
+    right: 0;
+}
+.footer-left .footer-right {
+    font-size: 11px;
+    position: relative;
+    padding: 5px 30px;
+    bottom: 0;
+}
+.faq {
+	position: relative;
+	top: 10px;
+	right: 10px;
+	font-size: 16px;
+}
+.float-right {
+    position: absolute;
+    right: 0;
+}
+.float-bottom-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#about {
+    position: relative;
+    float: right;
+}
+#overlay {
+	background-color: #228D87;
+    position: relative;
+	opacity: 0.95;
+}
+#more_info {
+	display: inline-block;
+	font-size: 18px;
+	text-align: center;
+    margin: 15px;
+}
+.about, .body, .faq, .float-right, .float-bottom-right, .footer-left, .footer-right, .results-container, .text, .title, #more_info {
+	font-family: sans-serif;
+}
+.title, .text, label, input, .plus, .results-container, .footer-left .footer-right, .faq, #about, .float-right, .float-bottom-right, #overlay {
+    color: #000;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Wen Booster?</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- site css -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="packages/jquery-ui/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/nigran.datepicker.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/atcb.min.css">
+    <div style="text-align:center;"><img height=auto width=75% src="resources/sk8terforg_l2r_small.gif"
+            alt="header display">
+    </div>
+</head>
+
+<body ng-app="dateCounter">
+
+    <div class="desc container date-calculator" ng-controller="DateCtrl">
+        <div class="title text-center">
+            <h2><b>WEN BOOSTER?</b>
+                <div id="about"><a class="circle-icon float-right" href="">?</a></div>
+            </h2>
+        </div>
+
+        <div id="overlay">
+            <a class="float-right" href="#">close❌</a>
+            <div id="more_info">
+                <p>
+                    Not affliated with any govt agency. Not an official source of information.
+                </p>
+                <p>
+                    WEN BOOSTER is a simple date calculator birth out of the frequent reminders to receive booster shots
+                    yet much uncertainty remains over vaccination status <a style="color: #1b1bae;"
+                        href="https://support.tracetogether.gov.sg/hc/en-sg/articles/4406847806361--Booster-What-will-my-Vaccination-status-show-after-I-ve-taken-my-booster"
+                        title="vac status 14th Feb">once the clock strikes 12</a> on the 14th Feb 2021. You will still
+                    be considered fully vaccinated as long as you're within the 270 days from last effective date.
+                </p>
+                <p>
+                    This app is currently only targeted and somewhat useful for people who have received their primary
+                    vaccination series and yet to take booster shot.
+                </p>
+                <p>
+                    You should see only an "effective from" date in the app now which will be replaced by a "valid till"
+                    come 14th Feb. After you take the booster jab, it takes 1-3 days for your status to be updated.
+                </p>
+                <br>
+                <p>
+                    🌟 Features 🌟<br>
+                    - Easy to use calendar, good till 2050<br>
+                    - Adds 270 days to your date of jeb by default but you know, just how fast the night changes<br>
+                    - Sk8terboi aka lil forg 🐸
+                </p>
+
+                Once again, information obtained from here is not official and ultimately only serves to show you what
+                adding 270 days to a date looks like.
+            </div>
+            <a class="float-bottom-right" href="#">close❌</a>
+        </div>
+
+        <div class="text-center">
+            <div class="text" for="from Date">Last Jeb Date (dd/mm/yyyy): </div>
+            <input id='datepicker' required placeholder="01/01/2021" class="date-table-condensed" ui-date="dateOptions"
+                ui-date-format="dd/mm/yy" ng-model="fromDate" ng-change="dateChange()">
+        </div>
+        <div class="plus">+</div>
+        <div class="text-center">
+            <input required type="number" max="10000000" min="1" placeholder="270" class="day-table-condensed"
+                ng-model="noDays" ng-change="dateChange()">
+            <label class="text" for="Days"> Days</label>
+        </div>
+
+        <div class="row" ng-if="results">
+            <div class="col-sm-8 col-sm-offset-2 results-container" ng-switch on=false>
+                <div ng-switch-when="false">
+                    <div class="row text-center">
+                        <p>Fully vaxxed status valid for {{noDays||270}} days till</p>
+                        <h2>{{results| date:'mediumDate'}}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="atcb" style="display:none;text-align:center;">
+            {
+            "name":"Last day I'm considered fully vaxxed",
+            "description":"Mai tu liao, when you see this again means next few days no need go out alr",
+            "startDate":"{{results| date: 'dd-MM-yyyy'}}",
+            "endDate":"{{results| date: 'dd-MM-yyyy'}}",
+            "location":"Your nearest jebbing clinic",
+            "label":"Add to Calendar",
+            "options":[
+            "Apple",
+            "Google",
+            "Microsoft365",
+            "Outlook.com"
+            ],
+            "iCalFileName":"Reminder-to-get-booster"
+            }
+        </div>
+        <div>
+            <span class="footer-left">Not affliated with GovTech</span>
+            <span class="footer-right pull-right">Source code available on <a href="https://github.com/jeffreytjs"
+                    title="GitHub">GitHub</a>
+            </span>
+        </div>
+
+</body>
+
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script src="js/atcb.min.js" defer></script>
+<!-- Angular JS -->
+<script src="js/angular/angular.min.js"></script>
+<script src="js/angular/angular-resource.min.js"></script>
+<script src="js/angular/app.js"></script>
+<script src="js/angular/controllers/dateCounter.js"></script>
+<!-- Angular JS -->
+
+<!-- angular UI-->
+<script type="text/javascript" src="packages/jquery-ui/jquery-ui.js"></script>
+<script type="text/javascript" src="packages/angular-ui-date/src/date.js"></script>
+<!-- angular UI-->
+
+</html>
