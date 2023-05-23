@@ -2,14 +2,14 @@
   "name": "wenBooster",
   "version": "1.0.0",
   "dependencies": {
+    "@bower_components/angular": "angular/bower-angular#1.4.3",
+    "@bower_components/angular-mocks": "angular/bower-angular-mocks#~1.x",
+    "@bower_components/jquery": "jquery/jquery-dist#>=1.6",
+    "@bower_components/jquery-ui": "components/jqueryui#^1.9",
     "@bower_components/qunit": "jquery/qunit#1.14.0",
     "@bower_components/requirejs": "jrburke/requirejs-bower#2.1.10",
     "@bower_components/sinon": "cjohansen/Sinon.JS#1.8.1",
     "@bower_components/sizzle": "jquery/sizzle#2.1.1-jquery.2.1.2",
-    "@bower_components/jquery": "jquery/jquery-dist#>=1.6",
-    "@bower_components/jquery-ui": "components/jqueryui#^1.9",
-    "@bower_components/angular": "angular/bower-angular#1.4.3",
-    "@bower_components/angular-mocks": "angular/bower-angular-mocks#~1.x"
   },
   "devDependencies": {
     "grunt": "~1.5.3",
