@@ -9,15 +9,19 @@
     "@bower_components/qunit": "jquery/qunit#1.14.0",
     "@bower_components/requirejs": "jrburke/requirejs-bower#2.1.10",
     "@bower_components/sinon": "cjohansen/Sinon.JS#1.8.1",
-    "@bower_components/sizzle": "jquery/sizzle#2.1.1-jquery.2.1.2"
+    "@bower_components/sizzle": "jquery/sizzle#2.1.1-jquery.2.1.2",
+    "fresh": "0.5.2",
+    "minimatch": "3.0.5",
+    "qs": "6.2.4",
+    "uglify-js": "2.6.0"
   },
   "devDependencies": {
-    "grunt": "~1.5.3",
-    "grunt-css": "0.2.0",
+    "grunt": "1.5.3",
     "grunt-compare-size": "0.1.4",
+    "grunt-css": "0.2.0",
+    "grunt-git-authors": "1.0.0",
     "grunt-html": "0.1.1",
     "grunt-junit": "0.1.5",
-    "grunt-git-authors": "1.0.0",
     "rimraf": "2.0.1",
     "testswarm": "0.3.0"
   },
