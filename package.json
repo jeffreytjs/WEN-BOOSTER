@@ -7,16 +7,16 @@
     "fresh": "0.5.2",
     "jquery": "^3.7.0",
     "jquery-ui": "^1.13.2",
-    "minimatch": "3.0.5",
-    "qs": "6.2.4",
+    "minimatch": "3.0.6",
+    "qs": "6.3.3",
     "qunit": "^2.19.4",
     "requirejs": "^2.3.6",
     "sinon": "^15.1.0",
     "sizzle": "^2.3.10",
-    "uglify-js": "2.6.0"
+    "uglify-js": "2.6.1"
   },
   "devDependencies": {
-    "grunt": "1.5.3",
+    "grunt": "1.6.0",
     "grunt-compare-size": "0.1.4",
     "grunt-css": "0.2.0",
     "grunt-git-authors": "1.0.0",
