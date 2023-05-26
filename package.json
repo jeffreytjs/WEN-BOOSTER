@@ -13,10 +13,10 @@
     "requirejs": "^2.3.6",
     "sinon": "^15.1.0",
     "sizzle": "^2.3.10",
-    "grunt": "1.6.0"
+    "grunt": "1.6.1"
   },
   "devDependencies": {
-    "grunt": "1.6.0",
+    "grunt": "1.6.1",
     "grunt-compare-size": "0.1.4",
     "grunt-css": "0.2.0",
     "grunt-git-authors": "1.0.0",
