@@ -8,7 +8,7 @@
     "jquery": "^3.7.0",
     "jquery-ui": "^1.13.2",
     "minimatch": "3.0.6",
-    "qs": "6.3.3",
+    "qs": "6.14.1",
     "qunit": "^2.19.4",
     "requirejs": "^2.3.6",
     "sinon": "^15.1.0",
@@ -23,7 +23,7 @@
     "grunt-html": "0.1.1",
     "grunt-junit": "0.1.5",
     "rimraf": "2.0.1",
-    "qs": "6.3.3",
+    "qs": "6.14.1",
     "testswarm": "1.1.0",
     "uglify-js": "^3.17.4"
   },
