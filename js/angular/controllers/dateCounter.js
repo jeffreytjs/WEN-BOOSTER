@@ -13,12 +13,10 @@
             changeMonth: true,
             yearRange: '2020:2050'
         };
-        $('#datepicker').datepicker({ dateFormat: 'dd/mm/yy' });
         init();
 
         function init() {
             $scope.fromDate = $filter('date')(new Date(), 'dd/MM/yyyy');
-            $scope.toDate = "";
             $scope.noDays = 270;
             $scope.results = calculateDate($scope.fromDate, $scope.noDays);
         }

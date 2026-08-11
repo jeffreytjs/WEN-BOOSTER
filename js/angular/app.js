@@ -1,2 +1,2 @@
 'use strict';
-angular.module('dateCounter', ['ngResource', 'ui.date']);
+angular.module('dateCounter', ['ui.date']);
