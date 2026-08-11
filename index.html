@@ -75,12 +75,10 @@
         </div>
 
         <div class="row" ng-if="results">
-            <div class="col-sm-8 col-sm-offset-2 results-container" ng-switch on=false>
-                <div ng-switch-when="false">
-                    <div class="row text-center">
-                        <p>Fully vaxxed status valid for {{noDays||270}} days till</p>
-                        <h2>{{results| date:'mediumDate'}}</h2>
-                    </div>
+            <div class="col-sm-8 col-sm-offset-2 results-container">
+                <div class="row text-center">
+                    <p>Fully vaxxed status valid for {{noDays||270}} days till</p>
+                    <h2>{{results| date:'mediumDate'}}</h2>
                 </div>
             </div>
         </div>
@@ -102,8 +100,7 @@
             }
         </div>
         <div>
-            <span class="footer-left">Not affliated with GovTech</span>
-            <span class="footer-right pull-right">Source code available on <a href="https://github.com/jeffreytjs"
+            <span class="footer-right pull-right">Source code available on <a href="https://github.com/jeffreytjs/WEN-BOOSTER"
                     title="GitHub">GitHub</a>
             </span>
         </div>
@@ -114,7 +111,6 @@
 <script src="js/atcb.min.js" defer></script>
 <!-- Angular JS -->
 <script src="js/angular/angular.min.js"></script>
-<script src="js/angular/angular-resource.min.js"></script>
 <script src="js/angular/app.js"></script>
 <script src="js/angular/controllers/dateCounter.js"></script>
 <!-- Angular JS -->

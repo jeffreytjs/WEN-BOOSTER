@@ -5,11 +5,6 @@ h1, .h1, h2, .h2, h3, .h3 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.header {
-    width: 60%;
-    height: auto;
-    text-align:center
-}
 .circle-icon {
     border: 2px solid #333;
     height: 35px;
@@ -65,23 +60,12 @@ input {
     margin-bottom: 20px;
     font-size: 17px;
 }
-.footer-left {
-    left: 0;
-}
 .footer-right {
     right: 0;
-}
-.footer-left .footer-right {
     font-size: 11px;
     position: relative;
     padding: 5px 30px;
     bottom: 0;
-}
-.faq {
-	position: relative;
-	top: 10px;
-	right: 10px;
-	font-size: 16px;
 }
 .float-right {
     position: absolute;
@@ -107,9 +91,9 @@ input {
 	text-align: center;
     margin: 15px;
 }
-.about, .body, .faq, .float-right, .float-bottom-right, .footer-left, .footer-right, .results-container, .text, .title, #more_info {
+.float-right, .float-bottom-right, .footer-right, .results-container, .text, .title, #more_info {
 	font-family: sans-serif;
 }
-.title, .text, label, input, .plus, .results-container, .footer-left .footer-right, .faq, #about, .float-right, .float-bottom-right, #overlay {
+.title, .text, label, input, .plus, .results-container, .footer-right, #about, .float-right, .float-bottom-right, #overlay {
     color: #000;
 }
